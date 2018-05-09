@@ -1,0 +1,32 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#00A878",
+    "navigationBarTitleText": "穷游网",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "borderStyle":"black",
+    "color":"#00C078",
+    "backgroundColor":"#fff",
+    "position":"bottom",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath":"",
+        "selectedIconPath": "",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "iconPath": "",
+        "selectedIconPath": "",
+        "text": "日志"
+      }
+    ]
+  }
+}
