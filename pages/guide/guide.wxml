@@ -1,0 +1,29 @@
+<!--pages/guide/guide.wxml-->
+<!--列表页-->
+<view class='container'>
+  <!--等待框-->
+  <loading hidden="{{!loading}}">加载中...</loading>
+  <!--顶部标题栏-->
+  <view class='page-header'>
+    <text class='page-title'>推荐锦囊</text>
+  </view>
+  <!--列表-->
+  <view class='page-body' wx:for="{{list}}" wx:key="name" wx:for-item="items">
+    <!--类型判断,显示不同的数据-->
+    <block>
+      <navigator url='/pages/guide/guidedetail?url={{items.url}}' hover-class="navigator-hover">
+        <view class='item'>
+          <image class='poster' src='{{items.img}}/100_150.jpg'></image>
+          <view class='meta'>
+            <text class='title'>{{items.name}}</text>
+            <text class='sub-title'>{{items.name}}</text>
+            <view class='rating'>
+              <text>{{items.country}}</text>
+            </view>
+          </view>
+        </view>
+      </navigator>
+       <navigator url="/pages/webview/webview" hover-class="navigator-hover">跳转锦囊H5</navigator>
+    </block>
+  </view>
+</view>

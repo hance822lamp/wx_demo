@@ -1,0 +1,2 @@
+<!--pages/guide/guidedetail.wxml-->
+<web-view src="{{url}}"></web-view>

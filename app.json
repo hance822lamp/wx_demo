@@ -1,7 +1,10 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/guide/guide",
+    "pages/guide/guidedetail",
+    "pages/webview/webview"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -26,6 +29,18 @@
         "iconPath": "",
         "selectedIconPath": "",
         "text": "日志"
+      },
+      {
+        "pagePath": "pages/guide/guide",
+        "iconPath": "",
+        "selectedIconPath": "",
+        "text": "锦囊原生"
+      },
+      {
+        "pagePath": "pages/guide/guidedetail",
+        "iconPath": "",
+        "selectedIconPath": "",
+        "text": "锦囊H5"
       }
     ]
   }
