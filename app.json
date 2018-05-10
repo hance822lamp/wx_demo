@@ -1,5 +1,6 @@
 {
   "pages":[
+    "pages/test/test",
     "pages/index/index",
     "pages/logs/logs",
     "pages/guide/guide",
@@ -18,6 +19,12 @@
     "backgroundColor":"#fff",
     "position":"bottom",
     "list": [
+      {
+        "pagePath": "pages/test/test",
+        "iconPath": "",
+        "selectedIconPath": "",
+        "text": "测试"
+      },
       {
         "pagePath": "pages/index/index",
         "iconPath":"",

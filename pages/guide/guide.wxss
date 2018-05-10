@@ -15,16 +15,18 @@
   display: flex;
   flex: 1;
   flex-direction: column;
+  column-count:2;
 }
 .item {
   display: flex;
+  flex-direction:column;
   padding: 20rpx 40rpx;
   border-bottom: 1rpx solid #eee;
   cursor: pointer;
 }
 .item .poster {
   width: 128rpx;
-  height: 128rpx;
+  height: 250rpx;
   margin-right: 20rpx;
 }
 .item .meta {

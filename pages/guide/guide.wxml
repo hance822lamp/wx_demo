@@ -8,10 +8,11 @@
     <text class='page-title'>推荐锦囊</text>
   </view>
   <!--列表-->
-  <view class='page-body' wx:for="{{list}}" wx:key="name" wx:for-item="items">
+  <view class='page-body' wx:for="{{list}}" wx:key="name" wx:for-item="items" style="flex-direction:row;">
+  <view  style="column-count:2;">
     <!--类型判断,显示不同的数据-->
     <block>
-      <navigator url='/pages/guide/guidedetail?url={{items.url}}' hover-class="navigator-hover">
+      <navigator url='/pages/webview/webview?url={{items.url}}' hover-class="navigator-hover">
         <view class='item'>
           <image class='poster' src='{{items.img}}/100_150.jpg'></image>
           <view class='meta'>
@@ -22,8 +23,10 @@
             </view>
           </view>
         </view>
-      </navigator>
-       <navigator url="/pages/webview/webview" hover-class="navigator-hover">跳转锦囊H5</navigator>
+      </navigator>  
     </block>
+    </view>
   </view>
+
+
 </view>

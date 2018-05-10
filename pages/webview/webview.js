@@ -8,8 +8,8 @@ Page({
     url: 'https://m.qyer.com/guide'
   },
   onLoad: function (options) {
-    //console.log(options);
-    this.setData({ url: options.url });
+    console.log(options);
+    options.url ? this.setData({ url: options.url }) : wx.navigateBack({ delta: 2 });
 
   },
 
